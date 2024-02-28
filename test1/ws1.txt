@@ -1,0 +1,16 @@
+What is the purpose of the log message you supply to your git commit?
+
+I can better view the time and details of each change I made, which helps me review better.
+
+What do you think makes a good commit message?
+
+The clear time and place of modification allow people to intuitively get the content when viewing it later.
+
+When and how often should I be committing my work?
+
+I think the ideal thing is that every part of the content should be submitted in time or every time it is modified, the time will be determined according to the completion progress of the task.
+
+True or False, you should commit all files (including binaries, images, and log files) to Git.
+
+False
+Only submit necessary content. Do not submit too many things as it will affect subsequent viewing.
