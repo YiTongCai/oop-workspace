@@ -10,4 +10,4 @@ bool is_descending(int array[], int n){
         return false;
     }
     return true;
-} s
+} 
