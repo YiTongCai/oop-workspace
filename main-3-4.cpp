@@ -5,4 +5,5 @@ int main() {
     char grade1 = 'A';
     char grade2 = 'D';
     char grade3 = 'V';
+    return 0;
 }

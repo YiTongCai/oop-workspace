@@ -4,8 +4,8 @@ int num_count(int array[], int n, int number){
         return 0;
     }
     int count = 0;
-    for (int i=0; i < n; i++) {
-        if(array[i] = number){
+    for (int i = 0; i < n; i++) {
+        if(array[i] == number){
             count++;
         }
     }

@@ -4,8 +4,8 @@ int sum_two_arrays(int array[], int secondarray[], int n){
         return 0;
     }
     int sum = 0;
-    for (int i=0; i < n; i++) {
-        sum = sum + array[i]+secondarray[i];
+    for (int i = 0; i < n; i++) {
+        sum += array[i]+secondarray[i];
     }
     return sum;
 } 
