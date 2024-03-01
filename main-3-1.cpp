@@ -7,5 +7,4 @@ int main() {
     std::cout << "The answer is: " << is_fanarray(array1,5) << std::endl;
     std::cout << "The answer is: " << is_fanarray(array2,5) << std::endl;
     return 0;
-    return 0;
 }
