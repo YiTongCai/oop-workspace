@@ -7,7 +7,7 @@ bool is_fanarray(int array[], int n){
         if (array[i] > array[i+1]){
             return false;
         }
-        if (array[i] != array[n-i]){
+        if (array[i] != array[n-i-1]){
             return false;
         }
         if (array[i] == array[n/2]){
