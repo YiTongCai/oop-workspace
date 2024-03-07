@@ -7,7 +7,7 @@ void count_digits(int array[4][4]){
         }  
     }
     for (int m = 0; m < 10; ++m){
-        std::cout << m << ":" << count[m] <<std::endl;
+        std::cout << m << ":" << count[m] <<",";
     } 
     std::cout<<std::endl;   
 }
