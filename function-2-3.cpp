@@ -5,13 +5,13 @@ bool is_palindrome(int integers[], int length){
     }
     for (int i = 0 ; i < length/2 ; i++) {
         if (integers[i] > integers[i+1]){
-            return -2;
+            return false;
         }
         if (integers[i] != integers[length-i-1]){
-            return -2;
+            return false;
         }
         if (integers[i] == integers[length/2]){
-            return -2;
+            return false;
         }
     }
     return true;
