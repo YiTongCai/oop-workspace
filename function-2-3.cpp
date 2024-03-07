@@ -7,16 +7,9 @@ bool is_palindrome(int integers[], int length){
         return -1;
     }
     for (int i = 0 ; i < length/2 ; i++) {
-        if (integers[i] > integers[i+1]){
-            return -2;
-        }
         if (integers[i] != integers[length-i-1]){
             return -2;
         }
-        if (integers[i] == integers[length/2]){
-            return -2;
-        }
-    }
     return true;
 } 
 
