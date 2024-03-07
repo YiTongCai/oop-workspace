@@ -6,6 +6,7 @@ int main() {
                        {2,5,4,0},
                        {8,7,4,6},
                        {9,3,1,2}};
+                       
     count_digits(array);
     return 0;
 }
