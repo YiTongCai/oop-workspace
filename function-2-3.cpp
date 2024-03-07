@@ -8,7 +8,7 @@ bool is_palindrome(int integers[], int length){
     }
     for (int i = 0 ; i < length/2 ; i++) {
         if (integers[i] != integers[length-i-1]){
-            return -2;
+            return false;
         }
     return true;
 } 
@@ -40,5 +40,6 @@ int sum_if_palindrome(int integers[], int length){
     }
     return sum_array_elements(integers,length);
 } 
+}
 
 
