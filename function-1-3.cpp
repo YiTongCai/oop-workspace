@@ -6,8 +6,8 @@ void count_digits(int array[4][4]){
             count[array[i][j]]++;
         }  
     }
-    for (int m = 0; m < 10; ++m){
-        std::cout << m << ":" << count[m] <<",";
+    for (int i = 0; i < 10; ++i){
+        std::cout << i << ":" << count[m] <<",";
     } 
     std::cout<<std::endl;   
 }
