@@ -1,10 +1,7 @@
 #include <iostream>
 bool is_palindrome(int integers[], int length){
-    if (length = 0){
-        return -1;
-    }
-    if (length < 0){
-        return -1;
+    if (length < 1){
+        return false;
     }
     for (int i = 0 ; i < length/2 ; i++) {
         if (integers[i] != integers[length-i-1]){
@@ -14,13 +11,9 @@ bool is_palindrome(int integers[], int length){
 } 
 
 int sum_array_elements(int integers[], int length){
-    if (length = 0){
-        return -1;
-    }
-    if (length < 0){
+    if (length < 1){
         return false;
     }
-    
     int sum = 0;
     for (int i = 0 ; i < length ; i++){
         sum += integers[i];
@@ -29,10 +22,7 @@ int sum_array_elements(int integers[], int length){
 }
 
 int sum_if_palindrome(int integers[], int length){
-    if (length = 0){
-        return -1;
-    }
-    if (length < 0){
+    if (length < 1){
         return false;
     }
     if (!is_palindrome(integers,length)){
