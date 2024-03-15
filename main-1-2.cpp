@@ -1,17 +1,9 @@
 #include <iostream>
-extern int is_identity(int array[10][10]);
+extern void modifyArray(double* array, int size, double value);
 
-int main() {
-    int array[10][10] = {{1,0,0,0,0,0,0,0,0,0},
-                         {0,1,0,0,0,0,0,0,0,0},
-                         {0,0,1,0,0,0,0,0,0,0},
-                         {0,0,0,1,0,0,0,0,0,0},
-                         {0,0,0,0,1,0,0,0,0,0},
-                         {0,0,0,0,0,1,0,0,0,0},
-                         {0,0,0,0,0,0,1,0,0,0},
-                         {0,0,0,0,0,0,0,1,0,0},
-                         {0,0,0,0,0,0,0,0,1,0},
-                         {0,0,0,0,0,0,0,0,0,1}};
-    std::cout << "The answer is : " << is_identity(array) << std::endl;
+int main(){
+    double array[]={7,2,3,4,1,5,9,0,8,6};
+    int size = 10;
+    double value = 7;
     return 0;
 }

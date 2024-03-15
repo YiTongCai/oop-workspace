@@ -1,12 +1,8 @@
 #include <iostream>
-extern void count_digits(int array[4][4]);
+extern double* duplicateArray(double* array, int size);
 
-int main() {
-    int array[4][4] = {{1,5,3,9},
-                       {2,5,4,0},
-                       {8,7,4,6},
-                       {9,3,1,2}};
-                       
-    count_digits(array);
+int main(){
+    double array[]={7,2,3,4,1,5,9,0,8,6};
+    int size = 10;
     return 0;
 }
