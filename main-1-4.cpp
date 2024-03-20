@@ -1,6 +1,6 @@
 #include <iostream>
 #include "person.h"
-extern PersonList deepCopyPersonList(PersonList pl);
+extern PersonList shallowCopyPersonList(PersonList pl);
 
 int main(){
     PersonList InitialList;
@@ -11,7 +11,7 @@ int main(){
        InitialList.people[i].age = 2;
 
     }
-    PersonList newList = deepCopyPersonList(InitialList);
+    PersonList newList = shallowCopyPersonList(InitialList);
 
     newList.people[0].name = "Iris";
     newList.people[0].age = 19;

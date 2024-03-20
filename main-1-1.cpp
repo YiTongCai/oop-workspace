@@ -1,9 +1,13 @@
 #include <iostream>
-extern double arrayMin(double* array, int size);
+#include "person.h"
+extern Person* createPersonArray (int n);
 
 int main(){
-    double array[]={7,2,3,4,1,5,9,0,8,6};
-    int size = 10;
-    std::cout<<arrayMin(array,size)<<std::endl;
+    int n = 2;
+    Person* PersonArray = createPersonArray(n);
+    for (int i = 0; i < n; ++i){
+        std::cout << "Name : " << PersonArray[i].name << "Age : " << PersonArray[i].age << std::endl;
+    }
+    delete [] PersonArray;
     return 0;
-}    
+}

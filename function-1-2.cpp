@@ -1,7 +1,12 @@
 #include <iostream>
-void modifyArray(double* array, int size, double value){
-    for (int i = 0; i < size; i++){
-        array[i] = array[i] + value;
+#include "person.h"
+PersonList createPersonList (int n){
+    PersonList List;
+    List.numPeople = n;
+    List.people = new Person[n];
+    for (int i = 0; i < n ;i++){
+        List.people[i].name = "John Doe";
+        List.people[i].age = 1;
     }
-    std::cout<< "The answer is ：" << array <<std::endl;
+    return List;
 }

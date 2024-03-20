@@ -1,9 +1,13 @@
 #include <iostream>
-extern void modifyArray(double* array, int size, double value);
+#include "person.h"
+extern PersonList createPersonList (int n);
 
 int main(){
-    double array[]={7,2,3,4,1,5,9,0,8,6};
-    int size = 10;
-    double value = 7;
+    int n = 2;
+    PersonList List = createPersonList(n);
+    for (int i = 0; i < n; ++i){
+        std::cout << "Name : " << List.people[i].name << "Age : " << List.people[i].age << std::endl;
+    }
+    delete [] List.people;
     return 0;
 }
