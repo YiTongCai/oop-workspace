@@ -1,5 +1,5 @@
 #include <iostream>
-#include "person.h"
+#include "Person.h"
 Person* createPersonArray (int n){
     Person* PersonArray = new Person[n];
     for (int i = 0; i < n ;i++){
