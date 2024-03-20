@@ -28,3 +28,5 @@ int main(){
     delete [] newList.people;
     return 0;
 }
+
+
